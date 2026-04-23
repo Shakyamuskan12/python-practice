@@ -1,15 +1,24 @@
-class student:
-    def __init__(self,name,marks):
-        self.name=name
-        self.marks=marks
+class Test:
+    def __init__(self, x):
+        self.x = x
+    
+t = Test(5)
+print(t)
+# ye useless memory address dikhta hai
+# <__main__. Test
 
-    def result(self):
-        if self.marks >= 40:
-            print(self.name,"pass")
-        else:
-            print(self.name,"fail" )
 
-s1 = student("john",90)
-s2 = student("ram",30)
-s1.result()
-s2.result() 
+# example with __str__()
+class Test:
+    def __init__(self, x):
+        self.x = x
+
+    def __str__(self):
+        return f"value is {self.x}"
+    
+
+t = Test(5)
+print(t)
+# ab readable output mila
+# __str__() = object ko human readable format me print karne ke lite
+#__init_ python ka constructor 
