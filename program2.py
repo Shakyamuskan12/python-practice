@@ -1,14 +1,15 @@
-def check(num):
-    if num % 2 ==0:
-        print("even number")
-    else:
-        print("odd number")
-check(2)
+class student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
 
-def check_even_odd(num):
-    if num %2 ==0:
-        return "Even"
-    else:
-        return "odd"
-result =check_even_odd(3)
-print(result)
+    def result(self):
+        if self.marks >= 40:
+            print(self.name,"pass")
+        else:
+            print(self.name,"fail" )
+
+s1 = student("john",90)
+s2 = student("ram",30)
+s1.result()
+s2.result() 
