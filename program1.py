@@ -1,23 +1,32 @@
-class calculator:
-    def __init__(self,a,b):   #constructor
-        self.a=a
-        self.b=b 
-        
-    def add(self):           #Method
-        print(self.a + self.b)
+# a = [1,2,3,4,5,4,2,3]
+# print(a)
+# s = set(a)
+# print(s)
+# print(list(s))
 
-    def sub(self):
-        print(self.a - self.b)
+a = {1,2,3,4,5}
+b = {2,4,3,1,7,8}
 
-    def mul(self):
-        print(self.a * self.b)
+# print("union", a|b)
+# print("intersection", a & b) # jo dono me common ho
+# print("diffrence", a - b)
+# print("symmetric diffrence", a ^ b) # jo dono me common nhi hai
+# print("issubset", a.issubset(b))
+# print("issuperset", a.issuperset(b))
+# print("isdisjoint", a.isdisjoint(b))
 
-    def div(self):
-        print(self.a / self.b)
+# marks ={
+#     "maths":90,
+#     "english":67,
+#     "science":95,
+# }
+# total =sum(marks.values())
+# print("total marks",total)
 
-
-s = calculator(5,10)    #object 3
-s.add()
-s.sub()
-s.mul()     
-s.div() 
+num = int(input("Enter your course: "))
+a ={
+    "python" : 1000,
+    "html" : 1800,
+    "angular":2100,
+    "php":2500,
+}
